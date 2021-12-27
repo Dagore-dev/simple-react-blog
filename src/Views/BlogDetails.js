@@ -4,13 +4,13 @@ import useFetch from '../Hooks/useFetch';
 export default function BlogDetails () {
 
     const { id } = useParams();
-    const { data: { title, author, body }, isPending, error } = useFetch(`http://localhost:8000/blogs/${id}`);
+    const { data: { title, author, body }, isPending, error } = useFetch(`https://damp-everglades-99244.herokuapp.com/blogs/${id}`);
     const navigate = useNavigate();
 
     function handleClick () {
 
         fetch(
-            `http://localhost:8000/blogs/${id}`,
+            `https://damp-everglades-99244.herokuapp.com/blogs/${id}`,
             {method: 'DELETE'}
         )
             .then(() => navigate('/'))

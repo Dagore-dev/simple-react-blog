@@ -3,7 +3,7 @@ import BlogList from '../Components/BlogList';
 
 export default function Home () {
 
-    const {data: blogs, isPending, error} = useFetch('http://localhost:8000/blogs');
+    const {data: blogs, isPending, error} = useFetch('https://damp-everglades-99244.herokuapp.com/blogs');
 
     return(
         <main className="home">

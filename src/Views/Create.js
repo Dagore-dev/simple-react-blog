@@ -22,7 +22,7 @@ export default function Create () {
         setIsPending(true);
 
         fetch(
-            'http://localhost:8000/blogs',
+            'https://damp-everglades-99244.herokuapp.com/blogs',
             {
                 method: 'POST',
                 headers: {"Content-Type": "application/json"},
